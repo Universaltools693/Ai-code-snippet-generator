@@ -1,0 +1,25 @@
+/* Tailwind is used for most styling */
+/* Additional custom styles */
+body.dark {
+  background-color: #111827;
+  color: white;
+}
+
+.loader {
+  border-top-color: #3498db;
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ad-space {
+  min-height: 90px;
+  border: 1px dashed #888;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
