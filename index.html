@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Code Snippet Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Welcome to AI Code Snippet Generator</h1>
+    <p>Select a programming language and describe your code needs below:</p>
+    <select id="language">
+        <option value="python">Python</option>
+        <option value="javascript">JavaScript</option>
+        <option value="java">Java</option>
+    </select>
+    <textarea id="description" rows="4" cols="50" placeholder="Describe your code..."></textarea>
+    <button onclick="generateCode()">Generate Code</button>
+    <pre id="output"></pre>
+    <script src="script.js"></script>
+</body>
+</html>
