@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Show pop-up ad modal on page load
     const adModal = document.getElementById('ad-modal');
-    adModal.classList.remove('hidden');
-    adModal.style.display = 'flex';
+    // adModal.classList.remove('hidden');
+    // adModal.style.display = 'flex';
 
     // Close modal
     document.getElementById('close-modal').addEventListener('click', function() {
