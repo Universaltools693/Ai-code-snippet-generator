@@ -20,11 +20,11 @@
             max-width: 100%;
         }
         #ads {
-            min-height: 200px; /* Adjusted height for mobile */
+            min-height: 350px; /* Adjusted height for mobile */
         }
         @media (min-width: 1024px) {
             #ads {
-                min-height: 250px; /* Slightly larger for desktop */
+                min-height: 400px; /* Slightly larger for desktop */
             }
         }
         .ad-banner {
@@ -32,22 +32,25 @@
             align-items: center;
             justify-content: center;
         }
-        /* Ensure ads fit in a single row on all devices */
         .ad-grid {
-            display: flex;
-            flex-wrap: nowrap;
-            overflow-x: auto; /* Horizontal scroll if needed, but won't be necessary */
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
             gap: 10px;
         }
         .ad-banner iframe {
-            width: 300px;
-            height: 100px;
+            width: 100%;
+            height: 150px;
         }
         @media (min-width: 1024px) {
             .ad-banner iframe {
-                width: 320px;
-                height: 120px;
+                height: 180px;
             }
+        }
+        .remaining-ad {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -68,13 +71,6 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="hero" class="py-6 text-center bg-gradient-to-b from-gray-800 to-gray-900">
-        <h1 class="text-4xl font-bold">AI-Powered Code Snippet Generator</h1>
-        <p class="mt-3 text-lg">Generate code instantly with cutting-edge technology</p>
-        <button onclick="document.getElementById('tool').scrollIntoView({behavior: 'smooth'})" class="mt-3 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Try It Now</button>
-    </section>
-
     <!-- Ads Section -->
     <section id="ads" class="py-4 bg-gray-800">
         <div class="container mx-auto px-4">
@@ -86,7 +82,7 @@
                         atOptions = {
                             'key' : 'b9eb4b624a6eee7cd48efdb6c14e05c4',
                             'format' : 'iframe',
-                            'height' : 100,
+                            'height' : 150,
                             'width' : 300,
                             'params' : {}
                         };
@@ -99,7 +95,7 @@
                         atOptions = {
                             'key' : 'ad-key-2', // Replace with unique ad key
                             'format' : 'iframe',
-                            'height' : 100,
+                            'height' : 150,
                             'width' : 300,
                             'params' : {}
                         };
@@ -112,7 +108,7 @@
                         atOptions = {
                             'key' : 'ad-key-3', // Replace with unique ad key
                             'format' : 'iframe',
-                            'height' : 100,
+                            'height' : 150,
                             'width' : 300,
                             'params' : {}
                         };
@@ -125,20 +121,29 @@
                         atOptions = {
                             'key' : 'ad-key-4', // Replace with unique ad key
                             'format' : 'iframe',
-                            'height' : 100,
+                            'height' : 150,
                             'width' : 300,
                             'params' : {}
                         };
                     </script>
                     <script type="text/javascript" src="//www.highperformanceformat.com/ad-key-4/invoke.js"></script>
                 </div>
-                <!-- Native Banner Ad -->
+            </div>
+            <!-- Remaining Ad (Native Ad) -->
+            <div class="remaining-ad">
                 <div class="ad-banner">
                     <script async="async" data-cfasync="false" src="//pl26450770.profitableratecpm.com/49eb46b0afb407c2f117a57072f36b62/invoke.js"></script>
                     <div id="container-49eb46b0afb407c2f117a57072f36b62"></div>
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- Hero Section (Moved Below Ads) -->
+    <section id="hero" class="py-6 text-center bg-gradient-to-b from-gray-800 to-gray-900">
+        <h1 class="text-4xl font-bold">AI-Powered Code Snippet Generator</h1>
+        <p class="mt-3 text-lg">Generate code instantly with cutting-edge technology</p>
+        <button onclick="document.getElementById('tool').scrollIntoView({behavior: 'smooth'})" class="mt-3 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Try It Now</button>
     </section>
 
     <!-- Tool Section -->
