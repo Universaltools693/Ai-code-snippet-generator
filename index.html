@@ -20,7 +20,34 @@
             max-width: 100%;
         }
         #ads {
-            min-height: 350px; /* Medium height for ads section */
+            min-height: 200px; /* Adjusted height for mobile */
+        }
+        @media (min-width: 1024px) {
+            #ads {
+                min-height: 250px; /* Slightly larger for desktop */
+            }
+        }
+        .ad-banner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /* Ensure ads fit in a single row on all devices */
+        .ad-grid {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto; /* Horizontal scroll if needed, but won't be necessary */
+            gap: 10px;
+        }
+        .ad-banner iframe {
+            width: 300px;
+            height: 100px;
+        }
+        @media (min-width: 1024px) {
+            .ad-banner iframe {
+                width: 320px;
+                height: 120px;
+            }
         }
     </style>
 </head>
@@ -52,61 +79,61 @@
     <section id="ads" class="py-4 bg-gray-800">
         <div class="container mx-auto px-4">
             <h2 class="text-xl font-bold text-center">Sponsored Content</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 mt-3">
+            <div class="ad-grid mt-3">
                 <!-- Banner Ad 1 -->
-                <div class="ad-banner flex items-center justify-center">
+                <div class="ad-banner">
                     <script type="text/javascript">
                         atOptions = {
                             'key' : 'b9eb4b624a6eee7cd48efdb6c14e05c4',
                             'format' : 'iframe',
-                            'height' : 50,
-                            'width' : 320,
+                            'height' : 100,
+                            'width' : 300,
                             'params' : {}
                         };
                     </script>
                     <script type="text/javascript" src="//www.highperformanceformat.com/b9eb4b624a6eee7cd48efdb6c14e05c4/invoke.js"></script>
                 </div>
                 <!-- Banner Ad 2 -->
-                <div class="ad-banner flex items-center justify-center">
+                <div class="ad-banner">
                     <script type="text/javascript">
                         atOptions = {
                             'key' : 'ad-key-2', // Replace with unique ad key
                             'format' : 'iframe',
-                            'height' : 50,
-                            'width' : 320,
+                            'height' : 100,
+                            'width' : 300,
                             'params' : {}
                         };
                     </script>
                     <script type="text/javascript" src="//www.highperformanceformat.com/ad-key-2/invoke.js"></script>
                 </div>
                 <!-- Banner Ad 3 -->
-                <div class="ad-banner flex items-center justify-center">
+                <div class="ad-banner">
                     <script type="text/javascript">
                         atOptions = {
                             'key' : 'ad-key-3', // Replace with unique ad key
                             'format' : 'iframe',
-                            'height' : 50,
-                            'width' : 320,
+                            'height' : 100,
+                            'width' : 300,
                             'params' : {}
                         };
                     </script>
                     <script type="text/javascript" src="//www.highperformanceformat.com/ad-key-3/invoke.js"></script>
                 </div>
                 <!-- Banner Ad 4 -->
-                <div class="ad-banner flex items-center justify-center">
+                <div class="ad-banner">
                     <script type="text/javascript">
                         atOptions = {
                             'key' : 'ad-key-4', // Replace with unique ad key
                             'format' : 'iframe',
-                            'height' : 50,
-                            'width' : 320,
+                            'height' : 100,
+                            'width' : 300,
                             'params' : {}
                         };
                     </script>
                     <script type="text/javascript" src="//www.highperformanceformat.com/ad-key-4/invoke.js"></script>
                 </div>
                 <!-- Native Banner Ad -->
-                <div class="ad-banner flex items-center justify-center">
+                <div class="ad-banner">
                     <script async="async" data-cfasync="false" src="//pl26450770.profitableratecpm.com/49eb46b0afb407c2f117a57072f36b62/invoke.js"></script>
                     <div id="container-49eb46b0afb407c2f117a57072f36b62"></div>
                 </div>
