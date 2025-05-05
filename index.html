@@ -5,13 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI-Powered Code Snippet Generator</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Tailwind CSS CDN for responsive, modern styling -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
-    <!-- Prism.js CSS for code syntax highlighting -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/themes/prism.min.css">
-    <!-- Google Fonts for professional typography -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <!-- PopCash Verification Meta Tag -->
     <meta name="ppck-ver" content="a3406692b0257a16cc5dd83abecb5125" />
 </head>
 <body class="font-roboto bg-gray-900 text-white">
@@ -21,7 +17,18 @@
     <!-- Pop-up Ad Modal -->
     <div id="ad-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
         <div class="bg-white p-6 rounded-lg text-black">
-            <p class="text-center">Advertisement Placeholder (Insert Ad Code Here)</p>
+            <div class="ad-banner h-32 flex items-center justify-center">
+                <script type="text/javascript">
+                    atOptions = {
+                        'key' : 'pop-up-ad-key', // Replace with actual pop-up ad key
+                        'format' : 'iframe',
+                        'height' : 250,
+                        'width' : 300,
+                        'params' : {}
+                    };
+                </script>
+                <script type="text/javascript" src="//www.highperformanceformat.com/pop-up-ad-key/invoke.js"></script>
+            </div>
             <button id="close-modal" class="mt-4 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Close</button>
         </div>
     </div>
@@ -46,25 +53,78 @@
         <button onclick="document.getElementById('tool').scrollIntoView({behavior: 'smooth'})" class="mt-8 bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600">Try It Now</button>
     </section>
 
+    <!-- Ads Section -->
+    <section id="ads" class="py-8 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-center text-white">Sponsored Content</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-4">
+                <!-- Banner Ad 1 (Originally from About) -->
+                <div class="ad-banner h-32 flex items-center justify-center">
+                    <script type="text/javascript">
+                        atOptions = {
+                            'key' : 'b9eb4b624a6eee7cd48efdb6c14e05c4',
+                            'format' : 'iframe',
+                            'height' : 50,
+                            'width' : 320,
+                            'params' : {}
+                        };
+                    </script>
+                    <script type="text/javascript" src="//www.highperformanceformat.com/b9eb4b624a6eee7cd48efdb6c14e05c4/invoke.js"></script>
+                </div>
+                <!-- Banner Ad 2 (Originally from Features) -->
+                <div class="ad-banner h-32 flex items-center justify-center">
+                    <script type="text/javascript">
+                        atOptions = {
+                            'key' : 'ad-key-2', // Replace with actual unique ad key
+                            'format' : 'iframe',
+                            'height' : 50,
+                            'width' : 320,
+                            'params' : {}
+                        };
+                    </script>
+                    <script type="text/javascript" src="//www.highperformanceformat.com/ad-key-2/invoke.js"></script>
+                </div>
+                <!-- Banner Ad 3 (Originally from How It Works) -->
+                <div class="ad-banner h-32 flex items-center justify-center">
+                    <script type="text/javascript">
+                        atOptions = {
+                            'key' : 'ad-key-3', // Replace with actual unique ad key
+                            'format' : 'iframe',
+                            'height' : 50,
+                            'width' : 320,
+                            'params' : {}
+                        };
+                    </script>
+                    <script type="text/javascript" src="//www.highperformanceformat.com/ad-key-3/invoke.js"></script>
+                </div>
+                <!-- Banner Ad 4 (Originally from Testimonials) -->
+                <div class="ad-banner h-32 flex items-center justify-center">
+                    <script type="text/javascript">
+                        atOptions = {
+                            'key' : 'ad-key-4', // Replace with actual unique ad key
+                            'format' : 'iframe',
+                            'height' : 50,
+                            'width' : 320,
+                            'params' : {}
+                        };
+                    </script>
+                    <script type="text/javascript" src="//www.highperformanceformat.com/ad-key-4/invoke.js"></script>
+                </div>
+                <!-- Native Banner Ad (Originally from Tool) -->
+                <div class="ad-banner h-32 flex items-center justify-center">
+                    <script async="async" data-cfasync="false" src="//pl26450770.profitableratecpm.com/49eb46b0afb407c2f117a57072f36b62/invoke.js"></script>
+                    <div id="container-49eb46b0afb407c2f117a57072f36b62"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- About Section -->
     <section id="about" class="py-16">
         <div class="container mx-auto px-4">
             <h2 class="text-4xl font-bold text-center">About the Tool</h2>
             <p class="mt-6 text-lg">Welcome to the AI-Powered Code Snippet Generator, a revolutionary tool designed for developers of all levels. Whether you're a beginner learning to code or a seasoned professional looking to streamline your workflow, our advanced AI can generate accurate and efficient code snippets based on your descriptions in seconds. Explore the features below and experience the future of coding.</p>
             <p class="mt-4 text-lg">Our tool leverages state-of-the-art artificial intelligence to understand your needs and provide tailored solutions. Scroll down to learn more and try it out!</p>
-            <!-- Banner 320x50 Ad -->
-            <div class="ad-banner my-8 h-32 bg-gray-700 flex items-center justify-center">
-                <script type="text/javascript">
-                    atOptions = {
-                        'key' : 'b9eb4b624a6eee7cd48efdb6c14e05c4',
-                        'format' : 'iframe',
-                        'height' : 50,
-                        'width' : 320,
-                        'params' : {}
-                    };
-                </script>
-                <script type="text/javascript" src="//www.highperformanceformat.com/b9eb4b624a6eee7cd48efdb6c14e05c4/invoke.js"></script>
-            </div>
         </div>
     </section>
 
@@ -79,19 +139,6 @@
                 <li>Free to use with no hidden costs</li>
                 <li>Customizable output with copy and download options</li>
             </ul>
-            <!-- Banner 320x50 Ad -->
-            <div class="ad-banner my-8 h-32 bg-gray-700 flex items-center justify-center">
-                <script type="text/javascript">
-                    atOptions = {
-                        'key' : 'b9eb4b624a6eee7cd48efdb6c14e05c4',
-                        'format' : 'iframe',
-                        'height' : 50,
-                        'width' : 320,
-                        'params' : {}
-                    };
-                </script>
-                <script type="text/javascript" src="//www.highperformanceformat.com/b9eb4b624a6eee7cd48efdb6c14e05c4/invoke.js"></script>
-            </div>
         </div>
     </section>
 
@@ -116,11 +163,6 @@
                     <button id="download-btn" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Download Code</button>
                 </div>
             </div>
-            <!-- Native Banner Ad -->
-            <div class="ad-banner my-8 h-32 bg-gray-700 flex items-center justify-center">
-                <script async="async" data-cfasync="false" src="//pl26450770.profitableratecpm.com/49eb46b0afb407c2f117a57072f36b62/invoke.js"></script>
-                <div id="container-49eb46b0afb407c2f117a57072f36b62"></div>
-            </div>
         </div>
     </section>
 
@@ -129,19 +171,6 @@
         <div class="container mx-auto px-4">
             <h2 class="text-4xl font-bold text-center">How It Works</h2>
             <p class="mt-6 text-lg max-w-3xl mx-auto">Our tool harnesses the power of advanced AI models trained on vast code repositories. Simply select a programming language, describe what you need in natural language, and let the AI generate a tailored code snippet for you. It’s fast, accurate, and designed to save you time on coding tasks of any complexity.</p>
-            <!-- Banner 320x50 Ad -->
-            <div class="ad-banner my-8 h-32 bg-gray-700 flex items-center justify-center">
-                <script type="text/javascript">
-                    atOptions = {
-                        'key' : 'b9eb4b624a6eee7cd48efdb6c14e05c4',
-                        'format' : 'iframe',
-                        'height' : 50,
-                        'width' : 320,
-                        'params' : {}
-                    };
-                </script>
-                <script type="text/javascript" src="//www.highperformanceformat.com/b9eb4b624a6eee7cd48efdb6c14e05c4/invoke.js"></script>
-            </div>
         </div>
     </section>
 
@@ -150,19 +179,6 @@
         <div class="container mx-auto px-4">
             <h2 class="text-4xl font-bold text-center">What Users Say</h2>
             <p class="mt-6 text-lg max-w-3xl mx-auto">“This tool saved me hours of coding!” - Developer A<br>“Perfect for quick prototypes and learning.” - Developer B</p>
-            <!-- Banner 320x50 Ad -->
-            <div class="ad-banner my-8 h-32 bg-gray-700 flex items-center justify-center">
-                <script type="text/javascript">
-                    atOptions = {
-                        'key' : 'b9eb4b624a6eee7cd48efdb6c14e05c4',
-                        'format' : 'iframe',
-                        'height' : 50,
-                        'width' : 320,
-                        'params' : {}
-                    };
-                </script>
-                <script type="text/javascript" src="//www.highperformanceformat.com/b9eb4b624a6eee7cd48efdb6c14e05c4/invoke.js"></script>
-            </div>
         </div>
     </section>
 
@@ -173,8 +189,17 @@
     </footer>
 
     <!-- Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Show pop-up ad immediately
+            document.getElementById('ad-modal').classList.remove('hidden');
+            // Close pop-up on button click
+            document.getElementById('close-modal').addEventListener('click', function() {
+                document.getElementById('ad-modal').classList.add('hidden');
+            });
+        });
+    </script>
     <script src="script.js"></script>
-    <!-- Prism.js for syntax highlighting -->
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/prism.min.js"></script>
 </body>
 </html>
